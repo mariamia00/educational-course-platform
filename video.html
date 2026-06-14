@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecție de programare demonstrativă | Informatic M IT</title>
+    <!-- Include necessary CSS files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="img/logo.jpg" />
+    <!-- Include Font Awesome and Bootstrap Icons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-trasparent navbar-dark p-0">
+      <a
+        href="index.html"
+        class="navbar-brand d-flex align-items-center px-4 px-lg-5"
+      >
+        <h2 class="m-0 text-primary">Informatic M IT</h2>
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler me-4"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+          <a href="index.html" class="nav-item nav-link">Acasă</a>
+
+          <div class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle position-relative"
+              data-bs-toggle="dropdown"
+            >
+              Servicii & Produse
+              <span class="position-absolute start-0 text-danger animated-new"
+                >Nou</span
+              >
+            </a>
+            <div class="dropdown-menu fade-down m-0">
+              <a href="courses.html" class="dropdown-item">Produse</a>
+              <a href="courses.html" class="dropdown-item">Cursuri</a>
+              <a href="courses.html" class="dropdown-item">Servicii</a>
+            </div>
+          </div>
+
+          <a href="team.html" class="nav-item nav-link">Echipa Noastră</a>
+
+          <a href="about.html" class="nav-item nav-link">Despre</a>
+
+          <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-3 page-header">
+      <div class="container py-4">
+        <div class="row justify-content-center"></div>
+      </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- token checkup -->
+
+    <div
+      id="alternativeValidation"
+      class="container-fluid d-flex flex-column justify-content-center align-items-center"
+      style="min-height: 75vh"
+    >
+      <p class="" style="text-align: justify">
+        Dacă ați trimis formularul, dar nu mai aveți acces la lecția demo,
+        completați numărul de telefon sau emailul trimis în formular
+        <b>(puteți completa doar una sau pe ambele)</b><br />Dacă este găsită o
+        potrivire pentru email sau telefon, veți primi instant acces la lecția
+        demo.
+      </p>
+      <div class="card p-4 shadow-sm w-100 mt-4" style="max-width: 450px">
+        <form id="alternativeForm" novalidate="novalidate" class="row g-3">
+          <div class="col-12">
+            <input
+              type="text"
+              id="inputPhone"
+              class="form-control"
+              placeholder="Nr de telefon"
+            />
+          </div>
+          <div class="col-12">
+            <input
+              type="email"
+              id="inputEmail"
+              class="form-control"
+              placeholder="Email"
+            />
+          </div>
+          <div class="col-12">
+            <button
+              type="button"
+              id="validateAlternative"
+              class="btn btn-primary w-100"
+            >
+              Verifică
+            </button>
+          </div>
+          <div
+            id="display-msg"
+            class="col-12 mt-2 text-center text-danger"
+          ></div>
+          <div id="alternativeMessage" class="mt-4 text-center">
+            <a href="index.html#demo" class="bold text-center">
+              <strong
+                >Vreau să trimit formularul pentru access la lecția demo</strong
+              >
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Video Content Start -->
+    <div class="container-fluid py-5" id="demoContent" style="display: none">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-6 text-center">
+          <!-- Adjusted to col-lg-8 -->
+          <!-- Video content or any other content you want to display -->
+          <h1 class="mb-4 fs-4">Așa decurge o lecție la Informatic M IT</h1>
+          <p class="mb-4">
+            Ne asigurăm că fiecare lecție este o oportunitate de învățare
+            eficientă și plăcută. Punem un accent deosebit pe exercițiile
+            practice, deoarece credem că cel mai bun mod de a învăța este prin
+            aplicarea cunoștințelor dobândite în situații reale.
+          </p>
+
+          <!-- Example: Responsive Embedding of a YouTube video -->
+          <div
+            class="mb-2"
+            style="
+              position: relative;
+              padding-bottom: 56.25%;
+              height: 0;
+              overflow: hidden;
+              max-width: 100%;
+            "
+          >
+            <video id="myVideo" controls width="100%">
+              Acest broswer nu poate afisa videoclipul.
+            </video>
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-center d-flex flex-column flex-md-row justify-content-center gap-3"
+      >
+        <a
+          href="./courses.html"
+          class="btn btn-primary btn-lg rounded-0 px-4 py-2"
+        >
+          Vezi cursurile noastre
+        </a>
+        <a
+          href="./contact.html"
+          class="btn btn-primary btn-lg rounded-0 px-4 py-2"
+        >
+          Vreau să cer informații
+        </a>
+      </div>
+    </div>
+    <!-- Video Content End -->
+
+    <script>
+      var video = document.getElementById("myVideo");
+
+      // Add event listener to prevent right-click on the video
+      video.addEventListener("contextmenu", function (e) {
+        e.preventDefault(); // Disable context menu on right-click
+      });
+    </script>
+
+    <!-- JavaScript files (similar to index.html) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="module" src="js/mailer/firebase.connect.js"></script>
+    <script type="module" src="js/demo-token-valid.js"></script>
+    <script type="module" src="js/video.js"></script>
+    <script src="./js/cookies.js"></script>
+    <!-- Additional scripts as per your requirements -->
+  </body>
+</html>
